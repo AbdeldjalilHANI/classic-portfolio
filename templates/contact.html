@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Me{% endblock %}
+
+{% block content %}
+<section class="contact">
+    <h1>Get In Touch</h1>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p><i class="fas fa-envelope"></i> abdeldjalilhani0@gmail.com</p>
+            <p><i class="fas fa-phone"></i> +213 794 880 551</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+        <div class="contact-form">
+            <form method="POST" action="{{ url_for('contact') }}">
+                {{ form.hidden_tag() }}
+                <div class="form-group">
+                    {{ form.name.label }}
+                    {{ form.name(class="form-control") }}
+                </div>
+                <div class="form-group">
+                    {{ form.email.label }}
+                    {{ form.email(class="form-control") }}
+                </div>
+                <div class="form-group">
+                    {{ form.message.label }}
+                    {{ form.message(class="form-control", rows=5) }}
+                </div>
+                {{ form.submit(class="btn") }}
+            </form>
+        </div>
+    </div>
+</section>
+{% endblock %}

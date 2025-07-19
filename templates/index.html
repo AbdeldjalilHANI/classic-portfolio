@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="hero-content">
+        <h1>Hi, I'm <span>Abdeldjalil HANI</span></h1>
+        <p>A Ph.D. student in Quantum Computing, a senior in AI and Machine Learning (NLP, Computer Vision, Deep Learning), and a skilled backend developer creating smart, scalable web applications</p>
+        <a href="{{ url_for('contact') }}" class="btn">Get In Touch</a>
+    </div>
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/hero-image.jpg') }}" alt="Profile Image">
+    </div>
+</section>
+
+<!-- Education Section -->
+<section class="education">
+    <h2>Education</h2>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+                <h3>Ph.D. in Quantum Computing</h3>
+                <p>Massachusetts Institute of Technology</p>
+                <ul>
+                    <li>Research focus on quantum machine learning algorithms</li>
+                    <li>Developing hybrid quantum-classical neural networks</li>
+                    <li>Published 3 papers in top-tier quantum computing journals</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-date">2020 - 2023</div>
+            <div class="timeline-content">
+                <h3>M.Sc. in Artificial Intelligence</h3>
+                <p>Stanford University</p>
+                <ul>
+                    <li>Specialized in Natural Language Processing</li>
+                    <li>Thesis: "Transformers for Low-Resource Languages"</li>
+                    <li>Graduated with distinction (GPA: 3.9/4.0)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item left">
+            <div class="timeline-date">2016 - 2020</div>
+            <div class="timeline-content">
+                <h3>B.Sc. in Computer Science</h3>
+                <p>University of Cambridge</p>
+                <ul>
+                    <li>Minor in Mathematics</li>
+                    <li>President of AI Student Club</li>
+                    <li>Graduated summa cum laude</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Work Experience Section -->
+<section class="experience">
+    <h2>Work Experience</h2>
+    <div class="timeline">
+        <div class="timeline-item left">
+            <div class="timeline-date">Feb 2025 - Present</div>
+            <div class="timeline-content">
+                <h3>Temporary University Teacher</h3>
+                <p>Setif 1 University</p>
+                <ul>
+                    <li>Teaching tutorials and practical work (TD&TP) in Algorithms and Data Structures</li>
+                    <li>Conducting practical sessions (TP) in Numerical Methods</li>
+                    <li>Mentoring students in fundamental computer science concepts</li>
+                </ul>
+            </div>
+        </div>
+        <div class="timeline-item right">
+            <div class="timeline-date">Nov - Dec 2024</div>
+            <div class="timeline-content">
+                <h3>Computer Scientist</h3>
+                <p>SARL Maprogaz</p>
+                <ul>
+                    <li>ERP system implementation and monitoring</li>
+                    <li>Provided technical support and troubleshooting</li>
+                    <li>Managed data entry and database maintenance</li>
+                    <li>Optimized business processes through technology solutions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill">
+            <i class="fas fa-code"></i>
+            <h3>Artificiel intelligence</h3>
+            <p>Builds intelligent systems for real-world decision-making and automation</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-server"></i>
+            <h3>Machine learning</h3>
+            <p>Develops models for image analysis and language understanding</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-database"></i>
+            <h3>Data Science</h3>
+            <p>Extracts insights from data using analysis and predictive modeling</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Building responsive and interactive websites</p>
+        </div>
+        <div class="skill">
+            <i class="fas fa-server"></i>
+            <h3>Backend</h3>
+            <p>Creates scalable APIs and services with modern backend tools</p>
+        </div>
+    </div>
+</section>
+
+<section class="featured-projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Quantum Neural Network">
+            <h3>Quantum Neural Networks</h3>
+            <p>Developed hybrid quantum-classical neural networks for image recognition tasks with 15% better accuracy than classical counterparts</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1542903660-eedba2cda473?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="AI Language Model">
+            <h3>Low-Resource Language Translator</h3>
+            <p>Created a transformer-based translation system for under-resourced languages using transfer learning techniques</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+        <div class="project-card">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Medical Diagnosis AI">
+            <h3>Medical Diagnosis Assistant</h3>
+            <p>Built an AI system that analyzes medical images with 92% accuracy in detecting abnormalities</p>
+            <a href="#" class="btn">View Project</a>
+        </div>
+    </div>
+    <a href="{{ url_for('projects') }}" class="btn view-all">View All Projects</a>
+</section>
+{% endblock %}
