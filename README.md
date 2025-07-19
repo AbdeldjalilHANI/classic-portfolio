@@ -8,7 +8,7 @@ Welcome to my personal portfolio! This website showcases my academic background,
 
 You can see the portfolio from here
 
-[www.google.com](https://classic-portfolio-1.onrender.com/)
+[portfolio live](https://classic-portfolio-1.onrender.com/)
 ---
 
 ## 📂 Sections Included
